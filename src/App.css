@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  background: url("./assets/simple-4781.jpg");
+}
+
+::selection{
+  background-color: #5b59d7;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #aab9eb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  rgb(107, 132, 233);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(59, 114, 243);
+}
+
+.parent{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+}
+
+/* .left-column{
+  border: 2px solid black;
+  min-width: min-content;
+} */
+
+.foodItems{
+  height: 85vh;
+  overflow-y: scroll;
+}
+
+.foodCard{
+  display: flex;
+  flex-flow: wrap row;
+  margin-top: 20px;
+  margin-inline: 15px;
+  padding: 10px;
+  background-color: #ffffff59;
+  border: 2px solid rgb(22, 93, 200);
+  border-radius: 20px;
+  box-shadow: 6px 3px 5px rgb(119, 163, 245);
+  transition: ease-in-out 200ms;
+}
+
+.foodCard:hover{
+  transform: translate(-3px, -3px);
+}
+
+.foodCard > div{
+  margin-left: 10px;
+}
+
+
+/* .right-column{
+  min-width: fit-content;
+} */
+
+.caloriesList{
+  margin-top: 40px;
+  color: #020075;
+}
+
+.calories-card{
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid #020075;
+  /* min-width: fit-content; */
+  width: fit-content;
+}
+
+
+.input{
+  padding: 10px;
+  font-size: 15px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  background-color: azure;
+}
+
+.search{
+  padding: 10px;
+  width: 90%;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  background-color: rgba(235, 248, 255, 0.956);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6), 3px 3px 5px rgb(187, 208, 248) inset;
+}
+
+.noResult{
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+p{
+  text-transform: capitalize;
+}
+
+button{
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(49, 91, 239);
+  border-radius: 10px;
+  color:white;
+  border:none;
+  box-shadow: 2px 2px 2px #333;
+  transition: ease-in-out 200ms;
+}
+
+button:active{
+  transform: translate(2px, 2px);
+}
+
+
+img{
+user-select: none;
+}
+
+#total{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 30px;
+}
