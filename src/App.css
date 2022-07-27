@@ -29,16 +29,12 @@ body{
 }
 
 .parent{
-  /* display: flex; */
+  margin-inline: 5vw;
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: 48% 48%;
-  column-gap: 4%;
+  grid-template-columns: 45vw 30vw;
+  column-gap: 10vw;
 }
-
-/* .left-column{
-  border: 2px solid black;
-  min-width: min-content;
-} */
 
 .foodItems{
   height: 85vh;
@@ -48,13 +44,15 @@ body{
 .foodCard{
   display: flex;
   flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   margin-inline: 15px;
   padding: 10px;
-  background-color: #ffffff59;
-  border: 2px solid rgb(22, 93, 200);
+  white-space: nowrap;
+  background-color: #ffffff69;
   border-radius: 20px;
-  box-shadow: 6px 3px 5px rgb(119, 163, 245);
+  box-shadow: 5px 4px 7px rgba(112, 160, 248, 0.814);
   transition: ease-in-out 200ms;
 }
 
@@ -63,13 +61,23 @@ body{
 }
 
 .foodCard > div{
-  margin-left: 10px;
+  margin-inline: 10px;
 }
 
+/*--------------Right Column--------------*/
 
-/* .right-column{
+.right-column{
   min-width: fit-content;
-} */
+} 
+
+.caloriesHead{
+background-color: #ffffff79;
+color: rgb(2, 13, 129);
+padding: 10px;
+text-align: center;
+border-radius: 20px;
+white-space: nowrap;
+}
 
 .caloriesList{
   margin-top: 40px;
@@ -77,32 +85,30 @@ body{
 }
 
 .calories-card{
+  display: grid;
+  grid-template-columns: 40% 10% 20% 10%;
+  column-gap: 10px;
+  justify-content: space-between;
+  white-space: nowrap;
+  align-items: center;
   margin-top: 20px;
-  padding: 5px;
+  padding-left: 20px;
   font-size: 20px;
-  border: 2px solid #020075;
-  /* min-width: fit-content; */
-  width: fit-content;
-}
-
-
-.input{
-  padding: 10px;
-  font-size: 15px;
-  margin: 10px;
-  border: none;
-  outline: none;
-  background-color: azure;
+  background-color: #ffffff81;
+  border-radius: 20px;
+  box-shadow: 5px 4px 7px rgba(112, 160, 248, 0.814);
 }
 
 .search{
-  padding: 10px;
-  width: 90%;
+  padding-inline: 20px;
+  padding-block: 10px;
+  width: 89%;
   margin: 10px;
   border: none;
   outline: none;
   font-size: 30px;
-  background-color: rgba(235, 248, 255, 0.956);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.534);
   box-shadow: 5px 5px 10px rgba(0,0,0,0.6), 3px 3px 5px rgb(187, 208, 248) inset;
 }
 
@@ -112,32 +118,82 @@ body{
   text-align: center;
 }
 
-p{
-  text-transform: capitalize;
+.input{
+  padding-inline: 10px;
+  border: none;
+  outline: none;
+  width: 60px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgba(255, 255, 255, 0.534);
+  box-shadow: 3px 3px rgb(44, 80, 222);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 button{
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
-  background-color: rgb(49, 91, 239);
-  border-radius: 10px;
+  background-color: rgb(94, 124, 233);
   color:white;
   border:none;
-  box-shadow: 2px 2px 2px #333;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 3px 3px 3px rgb(44, 80, 222);
   transition: ease-in-out 200ms;
+  text-shadow: 4px 4px#020075;
+  user-select: none;
+}
+
+button:hover{
+  background-color: rgb(43, 83, 231);
+  border-radius: 0px 0px 0px 0px;
+  text-shadow: 5px 5px#020075;
 }
 
 button:active{
-  transform: translate(2px, 2px);
+  background-color: rgb(94, 124, 233);
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 4px 4px 3px rgb(21, 33, 83) inset;
 }
 
+.calories-card>div>button{
+  padding-inline: 20px;
+  height: 70px;
+  margin-left: 15px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p>span{
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 600;
+  color: #4442d6;
+}
 
 img{
 user-select: none;
 }
 
+.caloriesHead>span{
+  font-size: larger;
+}
+
 #total{
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
+  font-size: 50px;
+  color:rgb(71, 114, 255);
+  text-shadow: 3px 3px 4px rgb(158, 157, 218);
+}
+
+.num{
   font-size: 30px;
 }

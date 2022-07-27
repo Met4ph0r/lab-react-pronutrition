@@ -1,6 +1,13 @@
 import './App.css';
 import React from 'react'
-
+import apple from './assets/apple.png'
+import banana from './assets/banana.png'
+import orange from './assets/orange.png'
+import guava from './assets/guava.png'
+import watermelon from './assets/watermelon.png'
+import pineapple from './assets/pineapple.png'
+import grapes from './assets/grapes.png'
+import pomegranate from './assets/pomegranate.png'
 
 class FoodBox extends React.Component {
 
@@ -56,8 +63,8 @@ class FoodBox extends React.Component {
           <img src={src} height="100" width="100" alt='fruit' />
         </div>
         <div className="info">
-          <p>{name}<br />
-            {calories} cal/100 grams
+          <p><span>{name}</span><br />
+            {calories} cal/100g
           </p>
         </div>
         <div className="quantity">
@@ -70,14 +77,14 @@ class FoodBox extends React.Component {
   }
 
   foodObject = {
-    "apple": this.createFood("apple", 52, "https://freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png"),
-    "banana": this.createFood("banana", 89, "https://freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png"),
-    "orange": this.createFood("orange", 47, "https://freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png"),
-    "guava": this.createFood("guava", 68, "https://freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png"),
-    "watermelon": this.createFood("watermelon", 30, "https://freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png"),
-    "pineapple": this.createFood("pineapple", 50, "https://freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png"),
-    "grapes": this.createFood("grapes", 67, "https://freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png"),
-    "pomegranate": this.createFood("pomegranate", 83, "https://freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png")
+    "apple": this.createFood("apple", 52, apple),
+    "banana": this.createFood("banana", 89, banana),
+    "orange": this.createFood("orange", 47, orange),
+    "guava": this.createFood("guava", 68, guava),
+    "watermelon": this.createFood("watermelon", 30, watermelon),
+    "pineapple": this.createFood("pineapple", 50, pineapple),
+    "grapes": this.createFood("grapes", 67, grapes),
+    "pomegranate": this.createFood("pomegranate", 83, pomegranate)
   }
 
   DynamicSearch = (str) => {
@@ -94,7 +101,7 @@ class FoodBox extends React.Component {
           <input type="text" className="search" placeholder="Search food" onChange={(e) => { this.setState({ searchTerm: e.target.value }) }} />
           <div className="foodItems">
           {
-          found.length==0 ? <div className='noResult'>No results found</div> :
+          found.length===0 ? <div className='noResult'>No results found</div> :
                             found.map(ele => (
                               this.foodObject[ele]
                               ))
@@ -103,8 +110,10 @@ class FoodBox extends React.Component {
         </div>
 
         <div className="right-column">
+          <div className="caloriesHead">
           <h1>-----Today's Food-----</h1>
-          <span id="total">{this.state.totalCalories}</span> Cal
+          <span id="total">{this.state.totalCalories}</span><span> Cal</span>
+          </div>
           <div className='caloriesList'>
           {
             this.state.foodList.map(ele => {
@@ -112,8 +121,8 @@ class FoodBox extends React.Component {
               if (parseInt(this.state[ele]) > 0)
                 return <>
                   <div className="calories-card">
-                    {this.state[ele]} {ele} = {this.state[nameCal]} Cal
-                    &nbsp; <button onClick={() => this.deleteFoodCalories(ele)}>X</button>
+                    <div> <span className="num"> {this.state[ele]} </span> {ele} </div>  <div> = </div> <div> <span className="num"> {this.state[nameCal]} </span> Cal </div>
+                    <div><button onClick={() => this.deleteFoodCalories(ele)}>X</button></div>
                   </div>
                   </>
                 else return <></>
