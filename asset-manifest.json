@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/lab-react-pronutrition/static/css/main.abe27a20.css",
+    "main.js": "/lab-react-pronutrition/static/js/main.b1552ea0.js",
+    "static/media/grapes.png": "/lab-react-pronutrition/static/media/grapes.c5e74c6086a7812744a4.png",
+    "static/media/pomegranate.png": "/lab-react-pronutrition/static/media/pomegranate.25173435c77a8aceb54a.png",
+    "static/media/watermelon.png": "/lab-react-pronutrition/static/media/watermelon.7cb5fbaa6be2378f0b54.png",
+    "static/media/guava.png": "/lab-react-pronutrition/static/media/guava.fe37641d80f13d170b22.png",
+    "static/media/pineapple.png": "/lab-react-pronutrition/static/media/pineapple.731819fb334b215f97d0.png",
+    "static/media/orange.png": "/lab-react-pronutrition/static/media/orange.46a804b7ddde73185dcf.png",
+    "static/media/apple.png": "/lab-react-pronutrition/static/media/apple.d81064785fef40b9b2a6.png",
+    "static/media/simple-4781.jpg": "/lab-react-pronutrition/static/media/simple-4781.8eb73615b71085af840e.jpg",
+    "static/media/banana.png": "/lab-react-pronutrition/static/media/banana.704cfce64536c493526d.png",
+    "index.html": "/lab-react-pronutrition/index.html",
+    "main.abe27a20.css.map": "/lab-react-pronutrition/static/css/main.abe27a20.css.map",
+    "main.b1552ea0.js.map": "/lab-react-pronutrition/static/js/main.b1552ea0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abe27a20.css",
+    "static/js/main.b1552ea0.js"
+  ]
+}
