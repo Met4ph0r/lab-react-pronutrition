@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  background: url("./assets/simple-4781.jpg");
+}
+
+::selection{
+  background-color: #5b59d7;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #aab9eb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  rgb(107, 132, 233);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(59, 114, 243);
+}
+
+.parent{
+  margin-inline: 5vw;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 45vw 30vw;
+  column-gap: 10vw;
+}
+
+.foodItems{
+  height: 85vh;
+  overflow-y: scroll;
+}
+
+.foodCard{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-inline: 15px;
+  padding: 10px;
+  white-space: nowrap;
+  background-color: #ffffff69;
+  border-radius: 20px;
+  box-shadow: 5px 4px 7px rgba(112, 160, 248, 0.814);
+  transition: ease-in-out 200ms;
+}
+
+.foodCard:hover{
+  transform: translate(-3px, -3px);
+}
+
+.foodCard > div{
+  margin-inline: 10px;
+}
+
+/*--------------Right Column--------------*/
+
+.right-column{
+  min-width: fit-content;
+} 
+
+.caloriesHead{
+background-color: #ffffff79;
+color: rgb(2, 13, 129);
+padding: 10px;
+text-align: center;
+border-radius: 20px;
+white-space: nowrap;
+}
+
+.caloriesList{
+  margin-top: 40px;
+  color: #020075;
+}
+
+.calories-card{
+  display: grid;
+  grid-template-columns: 40% 10% 20% 10%;
+  column-gap: 10px;
+  justify-content: space-between;
+  white-space: nowrap;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  background-color: #ffffff81;
+  border-radius: 20px;
+  box-shadow: 5px 4px 7px rgba(112, 160, 248, 0.814);
+}
+
+.search{
+  padding-inline: 20px;
+  padding-block: 10px;
+  width: 89%;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.534);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6), 3px 3px 5px rgb(187, 208, 248) inset;
+}
+
+.noResult{
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.input{
+  padding-inline: 10px;
+  border: none;
+  outline: none;
+  width: 60px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgba(255, 255, 255, 0.534);
+  box-shadow: 3px 3px rgb(44, 80, 222);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+button{
+  font-size: 40px;
+  font-weight: bold;
+  background-color: rgb(94, 124, 233);
+  color:white;
+  border:none;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 3px 3px 3px rgb(44, 80, 222);
+  transition: ease-in-out 200ms;
+  text-shadow: 4px 4px#020075;
+  user-select: none;
+}
+
+button:hover{
+  background-color: rgb(43, 83, 231);
+  border-radius: 0px 0px 0px 0px;
+  text-shadow: 5px 5px#020075;
+}
+
+button:active{
+  background-color: rgb(94, 124, 233);
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 4px 4px 3px rgb(21, 33, 83) inset;
+}
+
+.calories-card>div>button{
+  padding-inline: 20px;
+  height: 70px;
+  margin-left: 15px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p>span{
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 600;
+  color: #4442d6;
+}
+
+img{
+user-select: none;
+}
+
+.caloriesHead>span{
+  font-size: larger;
+}
+
+#total{
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 50px;
+  color:rgb(71, 114, 255);
+  text-shadow: 3px 3px 4px rgb(158, 157, 218);
+}
+
+.num{
+  font-size: 30px;
+}

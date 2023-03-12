@@ -1,0 +1,105 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    border:0;
+    background: url("https://assets-global.website-files.com/5e39e095596498a8b9624af1/5f6e93d250a6d04f4eae9f02_Backgrounds-WFU-thumbnail-(size).jpg");
+    /*background: url("https://undsgn.com/wp-content/uploads/2018/04/ltotbngnzzu.jpg");*/
+    
+    background-attachment: fixed;
+}
+
+a{ 
+    color:white;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+      
+}
+
+a:hover {
+    padding: 5px;
+    background-color: rgba(160, 213, 241, 0.829);
+    color: rgb(23, 20, 20);
+}
+
+#links{
+    word-spacing: 70px;
+    padding-top: 20px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+#photo{
+    text-align: left;
+    margin-block: 20px;
+    padding-left: 15%;
+}
+
+#sum{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: normal;
+    text-align: justify;
+    margin-top: 30px;
+    padding-inline: 15%;
+    padding-block: 2%;
+    background:url("https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95bd34713.png");
+    /*background:url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");*/
+    opacity: 0.7;
+}
+
+#abt{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: normal;
+    color: white;
+    text-align: justify;
+    margin-top: 30px;
+    padding-inline: 10%;
+    padding-block: 2%;
+ 
+}
+
+#work{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: normal;
+    text-align: justify;
+    margin-top: 30px;
+    padding-inline: 20%;
+    padding-block: 2%;
+    background:url("https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95bd34713.png");
+    /*background:url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");*/
+    opacity: 0.7;
+}
+
+#resume{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: normal;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding-inline: 10%;
+    padding-block: 2%;
+}
+
+#contact{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: normal;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding-inline: 10%;
+    padding-block: 2%;
+}
+
+#ref{
+    text-decoration: none;
+}
